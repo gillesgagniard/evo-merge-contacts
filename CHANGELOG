@@ -1,0 +1,8 @@
+0.0.2
+* Fix dialog title, bigger default dialog size
+* If pretty name for a field doesn't exist, at least use the VCARD name
+* Adapt to Evolution 2.30 API changes
+
+0.0.1
+* First release
+

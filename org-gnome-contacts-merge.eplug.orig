@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e-plugin-list>
+	<e-plugin type="shlib" location="@PREFIX@/liborg-gnome-contacts-merge.so" id="org.gnome.evolution.contacts-merge" name="Contacts Merger">
+		<description>Merges the contact information of several existing contacts into one</description>
+		<author name="Gilles Gagniard" email="gilles.gagniard@gmail.com"/>
+
+		<hook class="org.gnome.evolution.ui:1.0">
+			<ui-manager id="org.gnome.evolution.contacts" callback="org_gnome_contacts_merge">
+				<popup name="contact-popup">
+					<placeholder name="contact-popup-actions">
+						<menuitem action="ecm-do-merge"/>
+					</placeholder>
+				</popup>
+			</ui-manager>
+		</hook>
+	</e-plugin>
+</e-plugin-list>

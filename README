@@ -1,0 +1,14 @@
+Evolution Contact Merge
+=======================
+
+How to install
+--------------
+
+The prerequisites are Evolution ebook development packages; on Ubuntu Natty, they are named evolution-dev and libebook1.2-dev.
+You will also need SCons (also packaged in Ubuntu, package scons).
+
+For a system wide installation :
+$ scons prefix=/usr install
+
+If no prefix is provided, it defaults to /usr/local.
+
